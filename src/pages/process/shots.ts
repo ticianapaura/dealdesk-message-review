@@ -17,12 +17,12 @@ export const SHOT_SIZES: Record<string, [number, number]> = {
     1168
   ],
   "j4": [
-    1040,
-    814
+    1280,
+    767
   ],
   "j6": [
-    1040,
-    814
+    1280,
+    767
   ],
   "j7": [
     1040,
@@ -57,16 +57,16 @@ export const SHOT_SIZES: Record<string, [number, number]> = {
     196
   ],
   "r1": [
-    1040,
-    814
+    1280,
+    768
   ],
   "r2": [
     1280,
     1241
   ],
   "x1": [
-    1040,
-    814
+    1280,
+    768
   ],
   "x11": [
     1040,
