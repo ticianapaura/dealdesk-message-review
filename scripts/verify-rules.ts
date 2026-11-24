@@ -1,6 +1,7 @@
 /**
  * Rule checks for the state model and mock review engine.
  * Run with: npm run verify
+ * Type-checked separately from the browser app, with Node types: see tsconfig.scripts.json.
  * These exercise the reducer directly. They do not test the rendered UI.
  */
 import assert from "node:assert/strict";
@@ -11,7 +12,7 @@ import { COMMITMENT_SENTENCE_ID, REVISED_COMMITMENT, findScenario } from "../src
 
 function start(id: string): ScenarioState {
   const scenario = findScenario(id);
-  assert.ok(scenario, `scenario ${id} exists`);
+  if (!scenario) throw new Error(`Unknown scenario: ${id}`);
   return scenario.create();
 }
 function run(state: ScenarioState, ...actions: Action[]): ScenarioState {

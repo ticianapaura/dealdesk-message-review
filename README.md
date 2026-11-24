@@ -37,8 +37,8 @@ npm run dev
 |---|---|
 | `npm run dev` | Start the Vite dev server |
 | `npm run verify` | Run the rule checks on the state model and mock review engine |
-| `npm run typecheck` | TypeScript, no emit |
-| `npm run build` | Type-check, then build into `dist/` |
+| `npm run typecheck` | Type-check the app (`tsconfig.json`) and the Node verification script (`tsconfig.scripts.json`) |
+| `npm run build` | Type-check the app, then build into `dist/` |
 | `npm run preview` | Serve the production build locally |
 
 ## Prototype scenarios
