@@ -159,6 +159,8 @@ h1 { font-size: 28px; font-weight: 600; line-height: 1.2; letter-spacing: -0.025
 .issue-row { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; }
 .issue-why { flex: 1 1 260px; }
 .actions { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+/* When the buttons wrap under the explanation they stay on the right, like every other panel. */
+.issue-row .actions { margin-left: auto; }
 .facts { display: grid; grid-template-columns: 96px 1fr; gap: 6px 12px; }
 .facts dt { color: var(--text-secondary); }
 
@@ -266,7 +268,6 @@ h1 { font-size: 28px; font-weight: 600; line-height: 1.2; letter-spacing: -0.025
   .sent-card { padding: 18px 16px; }
   .btn { min-height: 44px; }
   .icon-btn { width: 44px; height: 44px; }
-  .actions { justify-content: flex-start; }
   .toast { left: 12px; right: 12px; bottom: 12px; max-width: none; }
   .toast-text { flex: 1; margin-right: 4px; }
   .overlay { padding: 12px; }
